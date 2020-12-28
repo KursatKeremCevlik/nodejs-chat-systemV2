@@ -6,11 +6,11 @@ const logger = require('morgan');
 
 const indexRouter = require('./routes/index');
 
-const app = express();
+const URL = 'mongodb://localhost/ChatSystem';
+const mongoDB = require('./helper/db');
+mongoDB(URL);
 
-// view engine setup
-// app.set('views', path.join(__dirname, 'views'));
-// app.set('view engine', 'pug');
+const app = express();
 
 app.use(logger('dev'));
 app.use(express.json());
