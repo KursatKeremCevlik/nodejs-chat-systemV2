@@ -18,11 +18,14 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-// app.use('/', indexRouter);
+app.use('/', indexRouter);
 app.get('/', (req, res) => {res.sendFile(__dirname + '/sheets/html/homePage.html');});
 
 app.use('/js/homePage', express.static(path.join(__dirname, '/sheets/js/homePage.js')));
 app.use('/css/homePage', express.static(path.join(__dirname, '/sheets/css/homePage.css')));
+
+app.use('/js/chai', express.static(path.join(__dirname, '/node_modules/chai/chai.js')));
+app.use('/js/chai-http', express.static(path.join(__dirname, '/node_modules/chai-http/dist/chai-http.js')));
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

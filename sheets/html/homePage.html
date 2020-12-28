@@ -6,13 +6,15 @@
   <title>Document</title>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="/js/homePage"></script>
+  <script src="/js/chai"></script>
+  <script src="/js/chai-http"></script>
   <link rel="stylesheet" href="/css/homePage">
 </head>
 <body id="body">
   <div class="container" id="container">
     <div class="contentPart" id="contentPart">
-      <div class="sign-up-input-home inputs-home">
-        <form id="sign-up-input-form" style="text-align: center;">
+      <div class="sign-up-input-home inputs-home" id="inputs-home1">
+        <form id="sign-up-form" style="text-align: center;">
           <input type="text" id="sign-up-name" class="input" autocomplete="off" placeholder="Name"> <br>
           <input type="text" id="sign-up-surname" class="input" autocomplete="off" placeholder="Surname"> <br>
           <input type="text" id="sign-up-username" class="input" autocomplete="off" placeholder="Username"> <br>
@@ -20,8 +22,8 @@
           <input type="submit" id="sign-up-permiss" class="permiss-button" value="Sign Up">
         </form>
       </div>
-      <div class="sign-in-input-home inputs-home" style="display: none;">
-        <form id="sign-in-input-form" style="text-align: center;">
+      <div class="sign-in-input-home inputs-home" id="inputs-home2" style="display: none;">
+        <form id="sign-in-form" style="text-align: center;">
           <input type="text" id="sign-in-username" class="input" autocomplete="off" placeholder="Username"> <br>
           <input type="password" id="sign-in-password" class="input" autocomplete="off" placeholder="Password"> <br>
           <input type="submit" id="sign-in-permiss" class="permiss-button" value="Sign In">
