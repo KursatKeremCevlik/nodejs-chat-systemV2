@@ -8,9 +8,33 @@
   <script src="/js/homePage"></script>
   <link rel="stylesheet" href="/css/homePage">
 </head>
-<body>
-  <div>
-    home page
+<body id="body">
+  <div class="container" id="container">
+    <div class="contentPart" id="contentPart">
+      <div class="sign-up-input-home inputs-home">
+        <form id="sign-up-input-form" style="text-align: center;">
+          <input type="text" id="sign-up-name" class="input" autocomplete="off" placeholder="Name"> <br>
+          <input type="text" id="sign-up-surname" class="input" autocomplete="off" placeholder="Surname"> <br>
+          <input type="text" id="sign-up-username" class="input" autocomplete="off" placeholder="Username"> <br>
+          <input type="password" id="sign-up-password" class="input" autocomplete="off" placeholder="Password"> <br>
+          <input type="submit" id="sign-up-permiss" class="permiss-button" value="Sign Up">
+        </form>
+      </div>
+      <div class="sign-in-input-home inputs-home" style="display: none;">
+        <form id="sign-in-input-form" style="text-align: center;">
+          <input type="text" id="sign-in-username" class="input" autocomplete="off" placeholder="Username"> <br>
+          <input type="password" id="sign-in-password" class="input" autocomplete="off" placeholder="Password"> <br>
+          <input type="submit" id="sign-in-permiss" class="permiss-button" value="Sign In">
+        </form>
+      </div>
+    </div>
+    <br>
+    <div class="buttons-home" id="buttons-home">
+      <div class="buttons" id="buttons">
+        <button class="sign-up button" id="sign-up">Sign Up</button> <br>
+        <button class="sign-in button" id="sign-in">Sign In</button>
+      </div>
+    </div>
   </div>
 </body>
 </html>
