@@ -8,7 +8,7 @@ const indexRouter = require('./routes/index');
 
 const URL = 'mongodb://localhost/ChatSystem';
 const mongoDB = require('./helper/db');
-mongoDB(URL);
+// mongoDB(URL);
 
 const app = express();
 
